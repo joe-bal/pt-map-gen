@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ptmapgen"
+version = "0.1.0"
+description = "Generate public transport maps from GTFS data"
+readme = "README.md"
+license = {file = "LICENSE"}
+
+[project.authors]
+name = "joe-bal"
+email = "67573196+joe-bal@users.noreply.github.com"
+
+[project.scripts]
+ptmapgen = "ptmapgen.cli:main"
+
+[project.dependencies]
+folium = "*"
+pandas = "*"
