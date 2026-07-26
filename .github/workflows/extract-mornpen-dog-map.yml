@@ -27,7 +27,7 @@ jobs:
           pip install playwright shapely pyproj simplekml
           playwright install --with-deps chromium
       - name: Capture IntraMaps responses and build KMZ
-        run: python tools/extract_mornpen_dogs.py
+        run: python tools/extract_mornpen_dogs_v2.py
       - name: Upload extraction output
         uses: actions/upload-artifact@v4
         with:
